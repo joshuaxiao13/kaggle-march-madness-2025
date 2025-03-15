@@ -7,5 +7,6 @@ do
 	kaggle competitions download \
 		-c $competition_name \
 		-f $file \
-		-p $output_dir
+		-p $output_dir \
+		$1
 done
