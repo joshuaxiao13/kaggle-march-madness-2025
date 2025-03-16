@@ -1,6 +1,18 @@
 mens_output_dir="datasets/torvik/mens"
 header_file_path="datasets/torvik/torvik_team_header.csv"
 
+# 2025 Selection Sunday: 2025-03-16
+
+cp ${header_file_path} ${mens_output_dir}/team_2025.csv 
+wget -O- \
+	"https://barttorvik.com/?year=2025&sort=&hteam=&t2value=&conlimit=All&state=All&begin=20241101&end=20250316&top=0&revquad=0&quad=5&venue=All&type=All&mingames=0&csv=1" \
+	| sed --expression='1d' >> ${mens_output_dir}/team_2025.csv
+
+cp ${header_file_path} ${mens_output_dir}/top30_wins_2025.csv
+wget -O- \
+	"https://barttorvik.com/?year=2025&sort=&hteam=&t2value=&conlimit=All&state=All&begin=20241101&end=20250316&top=30&revquad=0&quad=5&venue=All&type=All&mingames=0&csv=1" \
+	| sed --expression='1d' >> ${mens_output_dir}/top30_wins_2025.csv
+
 # 2024 Selection Sunday: 2024-03-17
 
 cp ${header_file_path} ${mens_output_dir}/team_2024.csv 
@@ -73,3 +85,51 @@ cp ${header_file_path} ${mens_output_dir}/top30_wins_2018.csv
 wget -O- \
 	"https://barttorvik.com/trank.php?year=2018&sort=&hteam=&t2value=&conlimit=All&state=All&begin=20171101&end=20180311&top=30&revquad=0&quad=5&venue=All&type=All&mingames=0&csv=1" \
 	| sed --expression='1d' >> ${mens_output_dir}/top30_wins_2018.csv
+
+# 2017 Selection Sunday: 2017-03-12
+
+cp ${header_file_path} ${mens_output_dir}/team_2017.csv 
+wget -O- \
+	"https://barttorvik.com/trank.php?year=2017&sort=&hteam=&t2value=&conlimit=All&state=All&begin=20161101&end=20170312&top=0&revquad=0&quad=5&venue=All&type=All&mingames=0&csv=1" \
+	| sed --expression='1d' >> ${mens_output_dir}/team_2017.csv
+
+cp ${header_file_path} ${mens_output_dir}/top30_wins_2017.csv
+wget -O- \
+	"https://barttorvik.com/trank.php?year=2017&sort=&hteam=&t2value=&conlimit=All&state=All&begin=20161101&end=20170312&top=30&revquad=0&quad=5&venue=All&type=All&mingames=0&csv=1" \
+	| sed --expression='1d' >> ${mens_output_dir}/top30_wins_2017.csv
+
+# 2016 Selection Sunday: 2016-03-13
+
+cp ${header_file_path} ${mens_output_dir}/team_2016.csv 
+wget -O- \
+	"https://barttorvik.com/trank.php?year=2016&sort=&hteam=&t2value=&conlimit=All&state=All&begin=20151101&end=20160313&top=0&revquad=0&quad=5&venue=All&type=All&mingames=0&csv=1" \
+	| sed --expression='1d' >> ${mens_output_dir}/team_2016.csv
+
+cp ${header_file_path} ${mens_output_dir}/top30_wins_2016.csv
+wget -O- \
+	"https://barttorvik.com/trank.php?year=2016&sort=&hteam=&t2value=&conlimit=All&state=All&begin=20151101&end=20160313&top=30&revquad=0&quad=5&venue=All&type=All&mingames=0&csv=1" \
+	| sed --expression='1d' >> ${mens_output_dir}/top30_wins_2016.csv
+
+# 2015 Selection Sunday: 2015-03-15
+
+cp ${header_file_path} ${mens_output_dir}/team_2015.csv 
+wget -O- \
+	"https://barttorvik.com/trank.php?year=2015&sort=&hteam=&t2value=&conlimit=All&state=All&begin=20141101&end=20150315&top=0&revquad=0&quad=5&venue=All&type=All&mingames=0&csv=1" \
+	| sed --expression='1d' >> ${mens_output_dir}/team_2015.csv
+
+cp ${header_file_path} ${mens_output_dir}/top30_wins_2015.csv
+wget -O- \
+	"https://barttorvik.com/trank.php?year=2015&sort=&hteam=&t2value=&conlimit=All&state=All&begin=20141101&end=20150315&top=30&revquad=0&quad=5&venue=All&type=All&mingames=0&csv=1" \
+	| sed --expression='1d' >> ${mens_output_dir}/top30_wins_2015.csv
+
+# 2014 Selection Sunday: 2014-03-16
+
+cp ${header_file_path} ${mens_output_dir}/team_2014.csv
+wget -O- \
+	"https://barttorvik.com/trank.php?year=2014&sort=&hteam=&t2value=&conlimit=All&state=All&begin=20131101&end=20140316&top=0&revquad=0&quad=5&venue=All&type=All&mingames=0&csv=1" \
+	| sed --expression='1d' >> ${mens_output_dir}/team_2014.csv
+
+cp ${header_file_path} ${mens_output_dir}/top30_wins_2014.csv
+wget -O- \
+	"https://barttorvik.com/trank.php?year=2014&sort=&hteam=&t2value=&conlimit=All&state=All&begin=20131101&end=20140316&top=30&revquad=0&quad=5&venue=All&type=All&mingames=0&csv=1" \
+	| sed --expression='1d' >> ${mens_output_dir}/top30_wins_2014.csv
