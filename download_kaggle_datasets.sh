@@ -1,6 +1,6 @@
 competition_name="march-machine-learning-mania-2025"
 output_dir="datasets/kaggle/"
-filenames=(MMasseyOrdinals.csv MTeams.csv MNCAATourneyCompactResults.csv MNCAATourneySeeds.csv MRegularSeasonCompactResults.csv)
+filenames=(MMasseyOrdinals.csv MTeams.csv WTeams.csv MNCAATourneyCompactResults.csv WNCAATourneyCompactResults.csv MNCAATourneySeeds.csv WNCAATourneySeeds.csv MRegularSeasonCompactResults.csv WRegularSeasonCompactResults.csv)
 
 for file in "${filenames[@]}"
 do
