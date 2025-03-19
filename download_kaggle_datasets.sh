@@ -11,4 +11,5 @@ do
 		$1
 done
 
+# If 403 Forbidden, download the file on the website https://www.kaggle.com/competitions/march-machine-learning-mania-2023/data?select=SampleSubmission2023.csv
 kaggle competitions download -c march-machine-learning-mania-2023 SampleSubmission2023.csv
