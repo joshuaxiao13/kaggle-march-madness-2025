@@ -21,7 +21,7 @@ In the root directory, run the shell scripts.
 
 You may need to `chmod u+x`.
 
-To download the Kaggle datasets, you need to create and add a Kaggle API key to local environment to use the Kaggle CLI. Consult the [https://www.kaggle.com/docs/api](Kaggle documentation).
+To download the Kaggle datasets, you need to create and add a Kaggle API key to local environment to use the Kaggle CLI. Consult the [Kaggle documentation](https://www.kaggle.com/docs/api).
 
 3. Open `notebook.ipynb` in the Jupyter notebok interface and run the first 28 blocks.
 
